@@ -1,9 +1,31 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.Example" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@color/white</item>
     </style>
 
     <style name="Theme.Example" parent="Base.Theme.Example" />
+
+    <style name="textcolor">
+        <item name="android:textColor">@color/blue_dark_20</item>
+    </style>
+
+    <style name="textcolorBlueDark30">
+        <item name="android:textColor">@color/blue_dark_30</item>
+    </style>
+
+    <style name="message_but" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/blue_dark_50</item>
+        <item name="iconTint">@color/gold_10</item>
+        <item name="android:textColor">@color/gold_10</item>
+    </style>
+
+    <style name="tabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabBackground">@color/white</item>
+        <item name="tabIndicatorColor">@color/blue_dark</item>
+        <item name="tabSelectedTextColor">@color/blue_dark</item>
+    </style>
+    <style name="cardview" parent="Widget.MaterialComponents.CardView">
+        <item name="background">@color/white</item>
+    </style>
 </resources>

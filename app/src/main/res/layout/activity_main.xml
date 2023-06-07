@@ -38,10 +38,11 @@
                     android:src="@drawable/ic_left" />
 
                 <TextView
+                    style="@style/textcolor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="120dp"
-                    android:text="Profile"
+                    android:text="@string/profile"
                     android:textSize="17sp" />
 
                 <ImageButton
@@ -79,11 +80,11 @@
 
     <TextView
         android:id="@+id/textView"
+        style="@style/textcolor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Brooklyn Simmons"
-        android:textColor="#3E3A57"
+        android:text="@string/brooklyn_simmons"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,7 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Agent"
+        android:text="@string/agent"
         android:textColor="#FF4E62"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,13 +105,13 @@
 
     <TextView
         android:id="@+id/textView3"
+        style="@style/textcolorBlueDark30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:drawableStart="@drawable/ic_location"
         android:drawablePadding="5dp"
-        android:text="Seattle, USASeattle, USA"
-        android:textColor="#44405E"
+        android:text="@string/seattle_usaseattle_usa"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,15 +127,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <com.google.android.material.button.MaterialButton
+            style="@style/message_but"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:paddingStart="24sp"
             android:paddingEnd="24sp"
-            android:text="Message"
-            android:textColor="#FFC243"
+            android:text="@string/message"
             app:cornerRadius="12dp"
-            app:icon="@drawable/ic_chat"
-            app:iconTint="@null" />
+            app:icon="@drawable/ic_chat" />
 
         <ImageButton
             android:layout_width="50dp"
@@ -146,6 +146,7 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
+        style="@style/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -153,37 +154,32 @@
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:tabBackground="#fff"
-        app:tabIndicatorColor="#3E3A56"
-        app:tabSelectedTextColor="#3E3A56">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Family" />
+            android:text="@string/family" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bbachelor" />
+            android:text="@string/bbachelor" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Buy" />
+            android:text="@string/buy" />
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:listitem="@layout/item_list"
-        tools:itemCount="5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_list" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

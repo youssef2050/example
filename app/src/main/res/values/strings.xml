@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">example</string>
+    <string name="profile">Profile</string>
+    <string name="brooklyn_simmons">Brooklyn Simmons</string>
+    <string name="agent">Agent</string>
+    <string name="seattle_usaseattle_usa">Seattle, USASeattle, USA</string>
+    <string name="message">Message</string>
+    <string name="family">Family</string>
+    <string name="bbachelor">Bbachelor</string>
+    <string name="buy">Buy</string>
+    <string name="_369_000" translatable="false">$369,000</string>
+    <string name="_3130_range_rd_huron_mi">3130 Range Rd, Huron MI</string>
+    <string name="house_for_sale">House for Sale</string>
 </resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">مثال</string>
+    <string name="profile">ملف شخصي</string>
+    <string name="brooklyn_simmons">يوسف عزالدين</string>
+    <string name="agent">وكيل</string>
+    <string name="seattle_usaseattle_usa">النصر، غزة، فلسطين</string>
+    <string name="message">رسالة</string>
+    <string name="family">العائلة</string>
+    <string name="bbachelor">بكالوريوس</string>
+    <string name="buy">شراء</string>
+    <string name="_3130_range_rd_huron_mi">احمد عبد السميع</string>
+    <string name="house_for_sale">منزل للبيع</string>
+</resources>

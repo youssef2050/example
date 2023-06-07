@@ -1,7 +1,30 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.Example" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:windowBackground">@color/blue_dark_30</item>
+    </style>
+
+    <style name="textcolor">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textcolorBlueDark30">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="message_but" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/gold</item>
+        <item name="iconTint">@color/blue_dark_10</item>
+        <item name="android:textColor">@color/blue_dark_10</item>
+    </style>
+
+    <style name="tabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabBackground">@color/blue_dark_30</item>
+        <item name="tabIndicatorColor">@color/gold_10</item>
+        <item name="tabSelectedTextColor">@color/gold_10</item>
+    </style>
+
+    <style name="cardview" parent="Widget.MaterialComponents.CardView">
+        <item name="background">@color/blue_dark_60</item>
     </style>
 </resources>

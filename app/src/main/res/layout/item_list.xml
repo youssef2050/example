@@ -1,6 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="15dp"
+    style="@style/cardview"
+    app:cardElevation="10dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/order_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/img" />
+
+        <FrameLayout
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/order_img"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16sp"
+            android:layout_toEndOf="@+id/order_img">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_horizontal"
+                android:text="@string/_369_000"
+                android:textColor="@color/gold"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_horizontal"
+                android:layout_marginStart="24sp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_text_family"
+                android:drawableStart="@drawable/ic_family"
+                android:drawablePadding="5dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/family"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                tools:ignore="UseCompatTextViewDrawableXml" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            style="@style/textcolor"
+            android:layout_toEndOf="@+id/order_img"
+            android:text="@string/_3130_range_rd_huron_mi"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_toEndOf="@id/order_img">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_point_red"
+                android:drawablePadding="5dp"
+                android:text="@string/house_for_sale"
+                android:textColor="@color/blue_10"
+                android:textSize="18sp"
+                tools:ignore="UseCompatTextViewDrawableXml" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end|center_horizontal"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_but_more"
+                android:src="@drawable/ic_raght" />
+        </FrameLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
